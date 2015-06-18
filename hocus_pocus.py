@@ -26,8 +26,8 @@ problem.addConstraint(AllDifferentConstraint())
 
 # Apply a bit of manual logic first.
 problem.addConstraint(lambda p: p == 1, ["P"]) # P must be 1
-problem.addConstraint(lambda r: r == 0, ["R"]) # So R must be 0
-problem.addConstraint(lambda h: h >= 8, ["H"]) # H >= 8
+problem.addConstraint(lambda h: h >= 8, ["H"]) # H >= 8 to cause a carry to P
+problem.addConstraint(lambda r: r == 0, ["R"]) # since P=1, R must be 0
 
 # The remaining constraints are based on column method addition.
 problem.addConstraint(lambda s, o: (s + s) % 10 == o, ["S", "O"])
