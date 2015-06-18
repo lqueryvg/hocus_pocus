@@ -1,5 +1,18 @@
 #!/usr/bin/env python2
 
+# The problem is to solve the following sum:
+#
+#     HOCUS
+#     POCUS +
+#    ------
+#    PRESTO
+#    ------
+#
+# Where:
+# - each letter represents a single digit (0-9)
+# - different letters represent different digits 
+# - the same letter represents the same digit
+
 from constraint import *
 
 problem = Problem()
