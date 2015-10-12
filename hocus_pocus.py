@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-# The problem is to solve the following sum:
+# Solve:
 #
 #     HOCUS
 #     POCUS +
